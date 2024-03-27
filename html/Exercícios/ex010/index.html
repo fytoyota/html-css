@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink</title>
+</head>
+<body>
+    <h1>Vamos criar um link</h1>
+    <h2>Link que abrirá na mesma página</h2>
+    <p>Para criar um hyperlink, devemos criar âncoras através da tag <strong>"a"</strong>. O principal atributo dessa tag é o <STRONG>"href"</STRONG>, que cria uma referência hipertexto.</p>
+    <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_self" hreflang="pt-br" rel="external">
+        Continuar navegando no site utilizando a sigla "_self"
+    </a>
+    <p>Neste caso, criamos uma forma de acessar o link desejado que continuará no mesmo navegador.
+        <dl>
+            <dt>href</dt>
+            <dd>A sigla siginifica que temos que colocar ali o link, a URL que desejamos ir ao clicarmos.</dd>
+            <dt>target</dt>
+            <dd>Target é o atributo da tag, ou seja, para onde iremos mandar o link: se continuaremos no mesmo site ou se iremos dar o comando para ir para outra página/aba.</dd>
+            <dt>hreflang</dt>
+            <dd>Este último indica para a máquina qual o idioma está sendo utilizado naquele link, facilitando que o sistema entenda e possibilite traduções.</dd>
+            <dt>rel</dt>
+            <dd>Rel é um atributo que ajuda os mecanismos de busca e de guiança do Google, por exemplo, a entenderem o código e para onde o link está mandando.</dd>
+        </dl>
+    </p>
+    <h2>Link que abrirá outra página</h2>
+    <p>Já quando desejamos guiar o usuário para um link que não continue na mesma página, assim como acontece no Google, por exemplo. Manteremos a tag e alteraremos o atributo, que será "_blank".</p>
+    <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" hreflang="pt-br">
+        Link que guiará para outra aba.
+    </a>
+    <p>A estrutura do código é semelhante, alterando somente o "target", que é o comando que irá guiar para onde o link deve abrir.</p>
+    <br>
+    <h2>Links internos</h2>
+    <p>Os links internos farão a relação com outra página que está dentro do nosso servidor</p>
+    <p>Esta é a primeira página do meu site, onde aprenderemos como levá-la a segunda página que está no mesmo servidor.</p>
+    <p>Por meio deste link, guiaremos você até a segunda página que irá conter um conteúdo para download, clicando <a href="pg002.html" rel="next">aqui</a>.</p>
+    <p>No caso de links internos, não é necessário o atributo "target", pois neste caso o link é do mesmo servidor, buscará na mesma pasta.</p>
+    <p>Links para propagandas dos quais você não quer que o mecanismo de busca "relacione seu site com o da pessoa", utilizando o atributo <strong>"rel"</strong>.</p>
+    <br>
+    <h2>Links em outras pastas</h2>
+    <p>O que faremos aqui é mandar um link que esteja no mesmo servidor, mas não na mesma pasta. Utilizando a mesma tag, clicando <a href="pg003/pg003.html">aqui</a> você se direciona para a página de notícias (pag003).</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-color: #EBDD5A;
+}
+
+h1{
+    color: black;
+    background-color: #E6BA22;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#principal{
+    color: whitesmoke;
+    background-color: #E6A322;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-stretch: expanded
+}
+
+h2{
+    color: #86E622;
+}
+
+.destacado{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+
+}
+
+.apagado{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.explicado{
+    background-color: #E6D222;
+}

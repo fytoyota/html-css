@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre fontes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Testando fontes do Google</h1>
+        <h2>Fonte número 1</h2>
+        <p>Neste primeiro teste, utilizamos três fontes diferentes tiradas do <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>. Para tal recurso, o passo a passo se define da seguinte maneira:</p>
+        <ol type="1">
+            <li><strong>Ainda no site do Google Fonts</strong></li>
+            <p>Selecionaremos a fonte desejada e clicamos em "Get font". Em seguida, ele irá adicionar a "sacola" e ele irá armazenar quantas fontes você selecionar, agrupando todas num código só. No caso, selecionei três tipos de fonte, a Cutive Mono, Patrick Hand SC e a Maiden Orange; as três estão na regra abaixo.</p>
+            <li><strong>Colocando a regra ao código CSS</strong></li>
+            <p>Após agrupar todas as fontes desejáveis, o próximo passo é clicar em "Get embed code" e "import". A primeira aba é a regra que devemos colocar logo abaixo do "style" ou nas primeiras linhas do código CSS, ela é quem dirá à máquina para reconhecer tal código. Toda regra é ditada pelo arrouba.</p>
+            <li><strong>Aplicando no código</strong></li>
+            <p>Para isso, basta que copiemos o código que fica na barra logo abaixo, ou se preferir, gerar à sua maneira, com as suas configurações de tamanho, estilo, peso etc.</p>
+        </ol>
+        <pre>
+            Assim ficou a regra:
+            <code>
+                @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Maiden+Orange&family=Pa
+                trick+Hand+SC&display=swap');
+            </code>
+            E assim ficou o código:
+            <code>
+                h1{
+                    font-family: 'Maiden Orange', serif;
+                    text-align: center;
+                }
+                h2{
+                    font-family: 'Patrick Hand SC', serif;
+                    font-style: italic;
+                }
+                p{
+                    font-family: 'Cutive Mono', serif;
+                    font-weight: 600;
+                    font-size: large;
+                    text-align: justify;
+                }
+            </code>
+        </pre>
+    </div>
+
+    <main>
+        <h1>Testando baixadas de outros sites</h1>
+        <p>Neste caso, usaremos fontes de outros sites que não do Google, o que exige alguns passos a mais, pois o arquivo da fonte estará armazenado numa pasta.</p>
+        <ol type="1">
+            <li><strong>Acesse o site</strong></li>
+            <p>Acesse os sites que disponibilizam fontes para baixar, como por exemplo o <a hreflang="en" target="_blank" href="https://www.dafont.com/pt/">Dafont</a> (site utilizado aqui).</p>
+            <li><strong>Escolha sua fonte e baixe</strong></li>
+            <p>Após a escolha da fonte, faça o download. Ele irá baixar um arquivo ZIP, portanto descompacte-o e coloque os arquivos numa pasta de seu HTML/CSS.</p>
+            <li><strong>Colocando a fonte no seu site</strong></li>
+            <p>Pela regra "@font-face" colocaremos todas as informações necessárias para que a fonte apareça de maneira correta em seu código.</p>
+        </ol>
+        <p>Esta foi a regra:
+            <pre>
+                <code>@font-face {
+                font-family: 'Gothic';
+                src: url('fonts/MetalGothic-DemoVersion-Regular.ttf') format('truetype');
+                font-weight: normal;
+                        }
+                </code>
+            E este foi o código:
+                <code>
+                    h1{
+                        text-align: center;
+                        font-family: Gothic, serif;
+                    }
+                </code>
+                </p>
+            </pre>
+    </main>
+</body>
+</html>

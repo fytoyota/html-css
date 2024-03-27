@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de fotos</title>
+    <style>
+        body{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: coral;">Seja bem vindo(a) a nossa página de fotos flexíveis</h1>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagem/tlou2g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagem/tlou2m.png" type="image/png">
+        <img src="imagem/tlou2p.png" alt="imagem flexível">
+    </picture>
+    <p>Olhou e se divertiu com o tamanho das imagens? <a href="index.html">Volte para a página principal.</a></p>
+</body>
+</html>

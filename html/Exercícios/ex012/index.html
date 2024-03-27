@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Hospedando vídeos no meu servidor (MP4)</h1>
+    <video src="midia/Camelosandando.mp4.mp4" width="500" controls></video>
+    <p>Quando utilizamos a tag <strong>video</strong>, ele irá renderizar na qualidade e tamanho que foram exportados. No entanto, é melhor que seu vídeo já tenha as configurações para hospedá-lo no seu site, já que quanto mais leve, melhor. Neste caso, é preciso que eu mude algumas configurações do vídeo para que ele caiba na página da melhor maneira possível, utilizando o parâmetro "width" que define a largura do vídeo.</p>
+    <h2>Vídeo em mkv</h2>
+    <video src="midia/Camelosandando.mkv.mkv" width="500" controls></video>
+    <p>Aqui separo o espaço para hospedar o vídeo em outros formatos. Importante salientar que é sempre bom ter várias opões de mídias para todo tipo de navegador.</p>
+    <h2>Hospedando vários formatos em uma tag</h2>
+    <p>Igualmente com as fotos e os áudios, temos de abrir a tag "video" e colocar cada mídia em um source, assim o sistema irá identificar que, caso o navegador não abra na primeira opção, temos a segunda e assim por diante.</p>
+    <video width="500" controls>
+        <source src="midia/Camelosandando.mp4.mp4" type="video/mp4">
+        <source src="midia/Camelosandando.mkv.mkv" type="video/mkv">
+        <p>Seu navegador não possui compatibilidade para reprodução de vídeo.</p>
+    </video>
+    <h1>Vídeos hospedados em outros sites</h1>
+    <p>De uma maneira mais fácil e mais barata, podemos utilizar o YouTube como um armazenamento e hospedagem de vídeos e utilizá-lo em nosso site de maneira completamente permitida. Basta que selecionemos o vídeo e, ao clicar em "compartilhar", nos aparece a opção "incorporar" que nos gera o código pronto para alocar aqui. Basta copiar e colar o código.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=eCz1lhrf7SLd4hoO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p>Desta maneira, conseguimos colocar o vídeo em nosso site sem utilizar dados de navegação, permitindo mais fluidez.</p>
+</body>
+</html>

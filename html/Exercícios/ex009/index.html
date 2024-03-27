@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com HTML</title>
+</head>
+<body bgcolor="lightblue">
+    <h1>Criação de listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>
+        A criação de listas pode ser feita pela tag <strong>"ol"</strong>, no qual delimitará a lista. Já a tag <strong>"li"</strong> irá identificar cada item da lista. Desta maneira:</p>
+    <ol type="I" start="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <p>A tag que identificará as listas, usada pela tag <strong>"li"</strong> não tem obrigatoriedade de fechamento.</p>
+    <h2>Listas não ordenadas</h2>
+    <p>Se caso a ordem dos itens não seja importante, temos a opção das listas não ordenadas, marcada pela tag <strong>"ul"</strong>.</p>
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <h2>Misturando as coisas</h2>
+    <p>Podemos criar também listas dentro das listas. Veja</p>
+    <ol type="I">
+        <li>Teoria Cognitivo Comportamental</li>
+        <li>Psicanálise</li>
+            <ol type="a">
+                <li>Freud</li>
+                <li>Lacan</li>
+                <li>Melanie Klein</li></ol>
+        <li>Humanismo</li>
+                <ol>
+                    <li>Carl Rogers</li>
+                    <li>Fritz Perls (gestalt)</li>
+                </ol>
+    </ol>
+    <h2 >Lista de definições</h2>
+    <p>Temos aqui uma forma de utilizar termos e colocar suas descrições, bem como num dicionário. Utilizando a tag <strong>"dl" (definition list)</strong> para abrir, <strong>"dt" (definition term)</strong> para colocar o termo e <strong>"dd" (definition description)</strong> para descrever o termo e defini-lo, desta maneira:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo do site, o background.</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para especificação de estilos em site, a parte estética do site.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividade em sites.</dd>
+    </dl>
+</body>
+</html>

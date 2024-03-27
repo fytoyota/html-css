@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: red;
+        }
+
+        div:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        Passe o mouse aqui para descobrir uma informação escondida
+        <p>TEXTO ESCONDIDO DAS LINHAS 12 AO 19
+            Para que isso aconteça, criamos um parágrafo dentro da DIV e dizemos que ela é filha com o sinal de maior (>) da DIV, escondendo seu conteúdo com o "display none". 
+            Já na linha 16, adicionamos um estado, ou seja, quando passarmos o mouse por cima (display block) o texto escondido aparecerá.
+        </p>
+        <p>
+            LINHAS 21 A 23
+                O pseudo-elemento "hover" cria a interação de passar o mouse em cima e efetuar alguma ação desgianada. Se, por exemplo, na linha 21 eu não tivesse designado o pseudo-elemento :hover, o texto da linha 30 apareceria em azul sem mesmo que eu passasse o mouse por cima. Porém, designamos para que o azul apareca na fonte apenas quando interagimos.
+        </p>
+    </div>
+</body>
+</html>

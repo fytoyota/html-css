@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir a imagem abaixo em vários dispositivos diferentes ou então apenas aumente e diminua o tamanho do seu navegador para testar a dinamicidade da imagem.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagempequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemmedia.png" type="image/png">
+        <img src="imagens/imagemgrande.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+        <audio src="midia/johnpatitucci.mp3" controls></audio>
+
+        <p>Uma outra maneira de se adicionar áudios, é da seguinte maneira:</p>
+
+        <audio controls preload="metadata">
+            <source src="midia/johnpatitucci.mp3" type="audio/mpeg">
+            <source src="midia/johnpatitucci.wav" type="audio/wav">
+            <source src="midia/johnpatitucci.ogg" type="audio/ogg">
+        </audio>
+        <p>Desta forma, o áudio será compatível com qualquer forma de reprodução, sendo eles o mp3(mpeg), wav ou ogg.</p>
+        <p>Se, por acaso, seu navegador não permitir a reprodução, <a href="midia/johnpatitucci.mp3" download="midia/johnpatitucci.mp3" type="mp3" target="_blank">clique aqui</a> e faça o download da música.</p>
+</body>
+</html>

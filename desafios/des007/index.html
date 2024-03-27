@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamicidade de imagens</title>
+</head>
+<body>
+    <h1>Alternando entre tamanho de imagens</h1>
+    <p>O objetivo deste desafio é fazer com que a imagem se adapte ao tamaho do dispositivo ou da forma que o navegador se comprotar.</p>
+    <picture >
+        <source media="(min-width: 1050px)" srcset="midia/tlou2g.png" type="image/png">
+        <source media="(min-width: 650px)" srcset="midia/tlou2m.png" type="image/png">
+        <img src="midia/tlou2p.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>

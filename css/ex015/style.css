@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Nesta página do código, será utilizada apenas para escrever o código em CSS. Foi utilizada a tag "link" na página principal de HTML e é a mesma para qualquer outra página que for criada e adicionada junto às CSS's.*/
+body{
+    background-color: blanchedalmond;
+    text-align: justify;
+}
+h1{
+    color: darksalmon;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: indianred;
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color: darkred;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+}

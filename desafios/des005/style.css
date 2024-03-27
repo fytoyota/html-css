@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    text-align: justify;
+}
+img{
+    image-resolution: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+h1{
+    text-align: center;
+    color: lightgreen;
+}
+h2{
+    text-align: center;
+    color: rgb(82, 224, 224);
+}
+p{
+    text-align: justify;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
