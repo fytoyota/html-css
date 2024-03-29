@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical de fundo</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        #container{
+            background: blueviolet url(imagens/target001.png) center no-repeat;
+            background-size: cover;
+
+            position: relative;
+            height: 580px;
+            padding: 10px;
+        }
+
+        #conteudo{
+            background: aqua url(imagens/target001.png) center no-repeat;
+            background-size: cover;
+
+            position: absolute;
+            height: 400px;
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+
+            left: 50%; 
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1>.</h1>
+        <article id="conteudo">
+            <p>.</p>
+        </article>
+    </section>
+</body>
+</html>
