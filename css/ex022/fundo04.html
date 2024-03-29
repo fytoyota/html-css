@@ -6,15 +6,22 @@
     <title>Teste de imagem e fundo</title>
     <style>
         body{
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-size: contain;
-            background-repeat: no-repeat;
+           background: black url(imagens/wallpaper002.jpg) center no-repeat fixed;
+           background-size: cover;
         }
         
+            /*o shorthand acima é:
+           background-color: 
+           background-image:
+           background-position
+           background-repeat
+           background-size
+           background-attachment
+           No entanto, o BACKGROUND-SIZE, por alguma razão, não funciona na shorthand, por isso, deve ser feito separadamente*/
+
         main h1{
             text-align: center;
+            background-position: ;
         }
 
         main p{
@@ -23,6 +30,8 @@
 
         main{
             background-color: aliceblue;
+            max-width: 600px;
+            min-width: 400px;
             width: 400px;
             padding: 10px;
             margin: auto;
