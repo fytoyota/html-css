@@ -76,25 +76,22 @@ section p{
     background-color: #33302d70;
     color: whitesmoke;
     width: 400px;
-    height: 300px;
+    height: 600px;
     box-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px 5px;
-    position: absolute;
 }
 
 .bloco2{
     background: black url(imagens/escrevendo.jpg) center no-repeat fixed;
     background-size: cover;
-    height: 700px;
-    position: relative;
+    height: 900px;
 }
 
 .bloco2 p{
     background-color: #33302d70;
     color: whitesmoke;
     width: 400px;
-    height: 300px;
+    height: 600px;
     box-shadow: rgba(0, 0, 0, 0.39) 5px 5px 5px 5px;
-    position: absolute;
 }
 
 footer{
@@ -105,5 +102,5 @@ footer{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    
+
 }
