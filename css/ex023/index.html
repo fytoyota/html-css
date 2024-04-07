@@ -10,39 +10,61 @@
         }
 
         table{
-            border: 3px solid green;
             border-collapse: collapse;
             width: 400px;
+            height: 400px;
         }
+
+        /* Irei ampliar os quadros da tabela para poder observar o vertical-align */
+
+        /* é possível alinhar as informações contida nas tabelas de maneira que o conteúdo fique centralizado ou fique à direita. Outra configuração é tida pela tag <vertical-align> que irá alinhar o conteúdo em cima (top), meio (middle) e baixo (bottom) */
 
         td{
             border: 1px solid black;
             padding: 5px;
         }
+
+        .direita{
+            text-align: right;
+        }
+
+        .centro{
+            text-align: center;
+        }
+
+        .topo{
+            vertical-align: top;
+        }
+
+        .baixo{
+            vertical-align: bottom;
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
     <h1>Tabelas</h1>
     <table>
-        <tr>
-            <td>Dado A1</td>
-            <td>Dado A2</td>
-            <td>Dado A3</td>
+        <tr class="direita">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
         </tr>
-        <tr>
-            <td>Dado B1</td>
-            <td>Dado B2</td>
-            <td>Dado B3</td>
+        <tr class="centro">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
         </tr>
-        <tr>
-            <td>Dado C1</td>
-            <td>Dado C2</td>
-            <td>Dado C3</td>
+        <tr class="topo">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
         </tr>
-        <tr>
-            <td>Dado D1</td>
-            <td>Dado D2</td>
-            <td>Dado D3</td>
+        <tr class="baixo">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
         </tr>
     </table>
 </body>
