@@ -23,9 +23,21 @@
             position: absolute;
         }
 
+        caption{
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -2px;
+            background-color: rgb(90, 89, 89);
+        }
+
         th{
             border: 1px solid black;
-            background-color: gray;
+            background-color: rgb(90, 89, 89);
             color: white;
             padding: 10px;
         }
@@ -33,6 +45,10 @@
         td{
             border: 1px solid black;
             padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
 
         .num{
@@ -46,10 +62,11 @@
     <p>Essa tabela contém os mesmos princípios que usamos para montar a estrutura do site, ou seja, usamos (t)head, (t)body e (t)foot. Dentro de cada um desses, iremos utilizar os mesmos recursos vistos anteriormente, as tags TR, TD e TH.</p>
     <h1 id="pop">Acompanhe a tabela abaixo da população de cada estado brasileiro</h1>
     <table>
+        <caption><strong>População das Unidades Federativas do Brasil</strong></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -163,7 +180,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>População total</th>
+            <th scope="row">População total</th>
             <td class="num"><strong>215.300.000</strong></td>
         </tfoot>
     </table>
